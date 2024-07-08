@@ -27,7 +27,7 @@ class ResultsView(generic.DetailView):
 def vote(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
     return question
-    # BELOW HAS AN EROOR 
+    # BELOW HAS AN ERROR, QUICK FIX
     # NOT SURE IF THE ABOVE RETURN MAKES SENSE
     # try:
     #     selected_choice = question.choice_set.get(pk=request.POST["choice"])

@@ -1,8 +1,10 @@
 {
-    "workbench.colorCustomizations": {
-        "titleBar.activeBackground": "#007a6c", // Active background
-        "titleBar.activeForeground": "#ffffff", // Active text
-        "titleBar.inactiveBackground": "#007a6c", // Inactive background
-        "titleBar.inactiveForeground": "#a0a0a0"  // Inactive text
-    }
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "always"
+        },
+      },
+      "isort.args":["--profile", "black"],
 }
